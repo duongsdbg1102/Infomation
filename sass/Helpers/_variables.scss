@@ -1,0 +1,54 @@
+
+//color
+$color-white-1:#fff;
+
+
+$color-black-1:#000;
+
+$color-silver-1:#999999;
+
+$color-green-1:#0bceaf;
+$color-blue-1:#2796e2;
+$color-red-1:#ed7256;
+
+$color-gray-1:rgb(46, 54, 63);
+$color-gray-2:rgb(75, 75, 82);
+//font-size
+$fs-14:14px;
+$fs-16:16px;
+
+$fs-18:18px;
+$fs-26:26px;
+$fs-30:30px;
+
+$fs-60:60px;
+
+//line-height
+$lh-1:1.5;
+$lh-2:normal;
+$lh-24:24px;
+$lh-30:30px;
+
+// font-weight:
+$fw-bold:bold;
+
+$fw-500:500;
+$fw-600:600;
+
+//magrin
+$mg-8:8px;
+$mg-20:20px;
+$mg-24:24px;
+$mg-45:45px;
+
+
+$breakpoints:(
+    
+    'extra-large':1200px,
+    'large':992px,
+  
+    'medium':768px,
+    
+    'small':576px,
+    
+)
