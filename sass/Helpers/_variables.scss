@@ -1,23 +1,38 @@
 
 //color
-$color-white-1:#fff;
+$primary-1: #513c06;
+    $primary-2: #7a5c10;
+    $primary-3: #a27c1a;
+    $primary-4: #c8992d;
+    $primary-5: #e9b949;
+    $primary-6: #f7d06e;
+    $primary-7: #f9da8b;
+    $primary-8: #f8e3a5;
+    $primary-9: #fceec5;
+    $primary-10: #fffaeb;
+    $primary-11: #F3E08F;
+    $grey-1: #102a42;
+    $grey-2: #243a52;
+    $grey-3: #324d67;
+    $grey-4: #48647f;
+    $grey-5: #617d98;
+    $grey-6: #829ab0;
+    $grey-7: #9eb2c7;
+    $grey-8: #bcccdc;
+    $grey-9: #dae2ec;
+    $grey-10: #f1f5f8;
+    $white: #fff;
 
-
-$color-black-1:#000;
-
-$color-silver-1:#999999;
-
-$color-green-1:#0bceaf;
-$color-blue-1:#2796e2;
-$color-red-1:#ed7256;
-
-$color-gray-1:rgb(46, 54, 63);
-$color-gray-2:rgb(75, 75, 82);
+//font family
+$ffamily:'Gruppo', cursive;
 //font-size
+$fs-8:8px;
+
 $fs-14:14px;
 $fs-16:16px;
 
 $fs-18:18px;
+$fs-20:20px;
 $fs-26:26px;
 $fs-30:30px;
 
@@ -29,12 +44,20 @@ $lh-2:normal;
 $lh-24:24px;
 $lh-30:30px;
 
+//letter-spacing
+$lt-1:1.5;
+$lt-2:2px;
+$lt-3:3px;
+$lt-30:30px;
 // font-weight:
 $fw-bold:bold;
 
 $fw-500:500;
 $fw-600:600;
+$fw-700:700;
 
+// padđing
+$pd-5:5px;
 //magrin
 $mg-8:8px;
 $mg-20:20px;

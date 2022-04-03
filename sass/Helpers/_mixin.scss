@@ -3,3 +3,20 @@
     font-size: $fs ;
     font-weight:$fw ;
 }
+@mixin arrow($size,$direction,$color) {
+    border-style:solid;
+    border-color: transparent;
+    display: inline-block;
+    border-width:$size;
+    @if $direction == up{
+        border-bottom-color:$color;
+    } @else if $direction == down{
+        border-top-color:$color ;
+    } @else if $direction == right{
+        border-left-color:$color ;
+    } @else if $direction == left{
+        border-right-color:$color ;
+    } @else {
+        @error "Unkown direction:#{$direction}.";
+    }
+}

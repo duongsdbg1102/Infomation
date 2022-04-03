@@ -3,14 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Nunito", sans-serif;
     font-weight: $fw-500;
-    color: $color-silver-1;
-    line-height: $lh-24;
-
-    
+    color: $grey-1;
+    line-height: $lh-1;
 }

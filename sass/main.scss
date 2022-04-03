@@ -7,11 +7,17 @@
 @import './Base/resets';
 @import './Base/customize';
 // layout
+@import './Layouts/header';
+@import './Layouts/slider';
+@import './Layouts/about';
+@import './Layouts/skill';
+@import './Layouts/_protfolio';
+@import './Layouts/_contact';
+@import './Layouts/_footer';
+
+
 
 
 @import './Base/resets';
 @import './Base/customize';
 
-// theme
-@import './Layouts/infoMain';
-@import './Layouts/intro';

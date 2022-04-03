@@ -1,0 +1,25 @@
+header{
+    .navbar-brand{
+        letter-spacing:$lt-3 ;
+        color: $primary-11;
+    }
+    .collapse{
+        .navbar-nav{
+            
+            .nav-item{
+                margin-right: 1.5rem;
+                .nav-link{
+                    font-family: $ffamily;
+                    @include styleText($grey-1,$fs-20,$fw-700);
+                    letter-spacing: $lt-3;
+                    text-transform: capitalize;
+                    transition: .2s;
+                    &:hover{
+                        color: $primary-5;
+                    }
+                }
+            }
+        }
+    }
+
+}

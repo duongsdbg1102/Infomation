@@ -7,10 +7,26 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
-  color: #999999;
-  line-height: 24px; }
+  color: #102a42;
+  line-height: 1.5; }
+
+header .navbar-brand {
+  letter-spacing: 3px;
+  color: #F3E08F; }
+header .collapse .navbar-nav .nav-item {
+  margin-right: 1.5rem; }
+  header .collapse .navbar-nav .nav-item .nav-link {
+    font-family: "Gruppo", cursive;
+    color: #102a42;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    transition: .2s; }
+    header .collapse .navbar-nav .nav-item .nav-link:hover {
+      color: #e9b949; }
 
 * {
   margin: 0;
@@ -21,59 +37,9 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
-  color: #999999;
-  line-height: 24px; }
-
-.info__main {
-  background: linear-gradient(to right top, #58aec3, #ccdde4); }
-
-.intro {
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
-  border-radius: 2rem;
-  padding: 2rem; }
-  .intro .intro__left {
-    border-right: 1px solid #c2c4c5; }
-    .intro .intro__left .intro__avatar {
-      width: 160px;
-      height: 160px; }
-      .intro .intro__left .intro__avatar img {
-        border-radius: 1.8rem;
-        height: 100%; }
-    .intro .intro__left .info__left--text {
-      margin-left: 24px; }
-      .intro .intro__left .info__left--text h2 {
-        color: #2e363f;
-        font-size: 30px;
-        font-weight: 600; }
-      .intro .intro__left .info__left--text h3 {
-        margin: 8px 0 0;
-        color: #4b4b52;
-        font-size: 16px;
-        font-weight: 400; }
-    .intro .intro__left .intro__item {
-      margin-top: 45px;
-      position: relative; }
-      .intro .intro__left .intro__item .intro__icon {
-        width: 40px;
-        height: 40px;
-        background-color: white;
-        line-height: 40px;
-        display: inline-block;
-        border-radius: 50%;
-        margin: 0 8px; }
-        .intro .intro__left .intro__item .intro__icon span {
-          position: absolute;
-          top: -32px;
-          text-align: left;
-          color: #fff;
-          font-size: 16px;
-          font-weight: 500; }
-        .intro .intro__left .intro__item .intro__icon a {
-          color: #000;
-          font-size: 18px;
-          font-weight: 500;
-          text-align: center; }
+  color: #102a42;
+  line-height: 1.5; }
 
 /*# sourceMappingURL=main.css.map */
