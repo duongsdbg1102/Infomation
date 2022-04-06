@@ -1,0 +1,20 @@
+.button{
+    background-color: $primary-5;
+    padding: $pd-6 $pd-12;
+    border: 2px solid transparent;
+    @include styleText($grey-1,$fs-14,$fw-700);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    letter-spacing: $lt-05 ;
+    transition: all .5s;
+    a{
+        color: $grey-1;
+    }
+    &:hover{
+        background-color: $primary-7;
+        transform: scale(1.05);
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}

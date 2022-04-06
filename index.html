@@ -10,7 +10,7 @@
     <!-- FONT-GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
     <!-- FONT-ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -20,6 +20,8 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- ICON TITLE -->
     <link rel="icon" href="./img/Logo.png">
+    <!-- //progress -->
+    <link rel="stylesheet" href="./css/progressBar.css">
     <!-- MAIN-CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -52,8 +54,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">nút dark night</a>
+                            <li class="nav-item theme--dark">
+                                <i class="fa fa-sun"></i>
+                                     <label for="checkbox" class="switch">
+                                    <input type="checkbox" name="" id="checkbox">
+                                    <div class="slider">
+
+                                    </div>
+                                </label> <i class="fa fa-moon"></i>
                             </li>
                         </ul>
                     </div>
@@ -64,21 +72,537 @@
     </header>
 
     <!-- Slider -->
-    <section class="silder"></section>
+    <section class="silder section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-6">
+                    <div class="silder__left ">
+                        <h1>i'm a web developer</h1>
+                        <p>I love building beautiful web experience</p>
+                        <button class="btn button"> <a href="#">ABOUT ME</a></button>
+                        <button class="btn button"> <a href="">PORTFOLIO</a></button>
+                        <div class="slider__item">
+
+                            <div class="slider__icon"> <span class="slider__text">Facebook</span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="slider__icon"><span class="slider__text">Instagram</span> <a href="#"><i
+                                        class="fab fa-instagram"></i></a></div>
+                            <div class="slider__icon"><span class="github slider__text">GitHub</span>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <div class="silider__right">
+                        <img src="./img/IMG_20181219_001324_457 (2).jpg" alt="avatar">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
     <!-- AboutMe -->
-    <section class="about"></section>
+    <section class="about section">
+
+        <div class="container">
+            <div class="title">
+                <h1>About Me</h1>
+            </div>
+            <div class="about__content">
+
+                <ul class="nav nav-tabs justify-content-center" id="myShortcode" role="tablist">
+                    <li class="nav-item" role="presentation">
+
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#full" role="tab"
+                            aria-controls="home" aria-selected="true">
+                            <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="morph"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <p>Bản Thân</p>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#WORK" role="tab"
+                            aria-controls="profile" aria-selected="false">
+                            <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="morph"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <p>Học Vấn</p>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#MULTIPURPOSE" role="tab"
+                            aria-controls="contact" aria-selected="false">
+                            <lord-icon src="https://cdn.lordicon.com/hpxruznz.json" trigger="morph"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <p>Mục Tiêu</p>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#LIMIT" role="tab"
+                            aria-controls="contact" aria-selected="false">
+                            <lord-icon src="https://cdn.lordicon.com/rjzlnunf.json" trigger="morph"
+                                style="width:60px;height:60px">
+                            </lord-icon>
+                            <p>Sở Thích</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myShortcodeContent">
+                    <div class="tab-pane fade show active" id="full" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="about__overview about__text">
+                            <h3 class="about__title">Giới Thiệu</h3>
+                            <p>Mình tên là Dương, hiện tại đang là sinh viên của trường ĐH Học Viện Công Nghệ Bưu Chính
+                                Viễn Thông và học chuyên ngành Điện Tử Viễn Thông.
+                            </p>
+                            <p>Thời gian gần đây mình tình cờ biết đến trang F8, các video ở đây dạy rất tận tâm và dễ
+                                hiểu, cảm ơn anh Sơn
+                                đã tạo ra trang web này giúp bản thân mình và mọi người có cơ hội trau dồi thêm kiến
+                                thức. Sau 1 khoảng thời gian
+                                học tập tại đây, mình đã hoàn thành khóa JavaScript căn bản và sẽ tiếp tục học các khóa
+                                khác để vươn tới mục tiêu
+                                có thể thực tập và đi làm trong tương lai!
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="WORK" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="about__edu about__text">
+
+                            <div class="row">
+                                <div class="about__education col-6 ">
+                                    <h3 class="about__title"><i class="fa fa-graduation-cap"></i> Giáo Dục</h3>
+                                    <div class="timeline">
+                                        <h3>Học Viện Công Nghệ Bưu Chính Viễn Thông</h3>
+                                        <p>2017-2022</p>
+                                        <p>Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập chưa rõ ràng
+                                            định
+                                            hướng sẽ làm gì trong ngành nghề này.</p>
+                                    </div>
+                                    <div class="timeline">
+                                        <h3>CyberSoft</h3>
+                                        <p>2/8/2021- nay</p>
+                                        <p>Trong những tháng nghỉ do dịch covid-19 mình đã tìm hiểu các khóa học Web
+                                            Developer và tình cờ mình biết đến CyberSorft.
+                                            Sau khi học tập tại đây một thời gian mình được trau dồi thêm rất nhiều kiến
+                                            thức bắt đầu từ con số 0 được các mentor hộ trợ nhiệt tình giờ đây mình đã
+                                            có
+                                            thể tự xây dựng được một trang web cơ bản.</p>
+                                    </div>
+                                </div>
+                                <div class="about__exp col-6">
+                                    <h3 class="about__title"><i class="fa fa-book-open"></i> Kiến Thức</h3>
+                                    <div class="timeline">
+                                        <h3>JAVA</h3>
+                                        <p>JAVA</p>
+                                        <p>Java là một ngôn ngữ lập trình bậc cao, hướng đối tượng, bảo mật và mạnh mẽ.
+                                            Phương châm của java là "Write Once, Run Anywhere" - viết một lần chạy nhiều
+                                            nơi.</p>
+                                    </div>
+                                    <div class="timeline">
+                                        <h3>HTML</h3>
+                                        <p>HyperText Markup Language</p>
+                                        <p>HTML được dịch là "Ngôn ngữ đánh dấu siêu văn bản",
+                                            nó được dùng để tạo ra các tài liệu hiện thị được trên trình duyệt.
+                                            HTML gọi là ngôn ngữ nhưng nó không giống như các ngôn ngữ kịch bản hay
+                                            ngôn ngữ lập trình (sử dụng các kịch bản để thi hành các tác vụ),
+                                            ngôn ngữ đánh dấu HTML lại sử dụng các thẻ để xác định nội dung của trang.
+                                        </p>
+                                    </div>
+                                    <div class="timeline">
+                                        <h3>CSS</h3>
+                                        <p>Cascading Style Sheets</p>
+                                        <p>CSS là một ngôn ngữ được sử dụng để tìm và định dạng lại các phần tử được tạo
+                                            ra
+                                            bởi ngôn ngữ đánh dấu (HTML).
+                                            Nói ngắn gọn hơn là ngôn ngữ tạo phong cách cho trang web.</p>
+                                    </div>
+                                    <div class="timeline">
+                                        <h3>SASS</h3>
+                                        <p>Syntactically Awesome Style Sheets</p>
+                                    
+                                        <p>Vào học từ 2019 đến nay những năm đầu của sinh viên, học tập chưa rõ ràng
+                                            định
+                                            hướng sẽ làm gì trong ngành nghề này.</p>
+                                    </div>
+                                    <div class="timeline">
+                                        <h3>JS</h3>
+                                        <p>Javascript</p>
+                                        <p>Javascript là một ngôn ngữ lập trình kịch bản được sử dụng rộng rãi trong các
+                                            ứng
+                                            dụng Website và
+                                            được hỗ trợ hầu như trên tất cả các trình duyệt trên cả máy tính lẫn điện
+                                            thoại.
+                                            Nhiệm vụ của Javascript là xử lý những đối tượng HTML trên trình duyệt.
+                                            Nó có thể can thiệp với các hành động như thêm / xóa / sửa các thuộc tính
+                                            CSS và
+                                            các thẻ HTML một cách dễ dàng.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="MULTIPURPOSE" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="about__exp about__text">
+                            <h3 class="about__title">Mục Tiêu</h3>
+                            <h2>Sở Thích</h2>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="LIMIT" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="about__text about__Like">
+                            <h3 class=" about__title">Sở Thích</h3>
+                            <h3><i class="fa fa-gamepad"></i> Chơi Game</h3>
+                            <a href="https://www.leagueoflegends.com/en-us/" target="_blank" class="about__game">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./img/lol.jpg " alt="LMHT" class="img-fluid">
+                                    </div>
+                                    <div class="col-9">
+                                        <h2>Liên Minh Huyền Thoại</h2>
+                                        <p>là tựa game moba rất phổ biến và được ưa chuộng
+                                            tại Việt Nam.Tựa game này mang tính chiến thuật và giải trí cao,nơi rất
+                                            nhiều các anh hùng bàn phím trao nhau những lời lẽ tốt đẹp :v</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.ageofempires.com/" target="_blank" class="about__game">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./img/aoe.jpg " alt="aoe" class="img-fluid">
+                                    </div>
+                                    <div class="col-9">
+                                        <h2>AOE(Đế Chế)</h2>
+                                        <p>là một dòng trò chơi chiến thuật thời gian thực mang tính chất lịch sử </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <h3><i class="fa fa-tv"></i> Xem Phim</h3>
+                            <a href="#" target="_blank" class="about__game">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./img/spiderman.jpg " alt="spiderman" class="img-fluid">
+                                    </div>
+                                    <div class="col-9">
+                                        <h2>SPIDER-MAN: NO WAY HOME</h2>
+                                        <p>Khi phản diện Mysterio đã tiết lộ danh tính thực sự của người nhện là Peter
+                                            Parker, Spiderman đã phải đối diện với nhiều lời khen chê trái chiều đến từ
+                                            công chúng, việc này không những làm ảnh hưởng đến cuộc sống của Peter mà
+                                            còn khiến Dì May, cậu bạn Ned và người yêu MJ bị liên lụy.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://motphimtv.tv/phim/biet-doi-sieu-anh-hung-4-hoi-ket-6517.html"
+                                target="_blank" class="about__game">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./img/endgame.jpg " alt="endgame">
+                                    </div>
+                                    <div class="col-9">
+                                        <h2>Avengers:Endgame</h2>
+                                        <p>Cú búng tay của Thanos đã khiến toàn bộ dân số biến mất một nửa. Các siêu anh
+                                            hùng đánh mất bạn bè, người thân và đánh mất cả chính mình. Bộ sáu Avengers
+                                            đầu tiên tứ tán. Iron Man kẹt lại ngoài không gian, Hawkeye mất tích. Thor,
+                                            Captain America, Hulk và Black Widow đều chìm trong nỗi đau vô tận vì mất đi
+                                            những người thân yêu. </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://phimplay.com/sinh-vat-huyen-bi-va-noi-tim-ra-chung" target="_blank"
+                                class="about__game">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./img/Fantastic Beasts.jpg " alt="endgame">
+                                    </div>
+                                    <div class="col-9">
+                                        <h2>Fantastic Beasts</h2>
+                                        <p>Kể về hành trình khám phá thế giới kỳ bí của pháp sư Newt Scamander do nam
+                                            diễn viên Eddie Redmayne tài năng đảm nhận. Anh lên đường tới New York vào
+                                            năm 1926 và bắt đầu quá trình đúc kết những tư liệu về các loài sinh vật mà
+                                            về sau trường Hogwarts dùng để giảng dạy </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://biluu.org/phim/4738-khach-san-huyen-bi-2" target="_blank"
+                                class="about__game">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="./img/khachsanhuyenbi.jpg " alt="hotel">
+                                    </div>
+                                    <div class="col-9">
+                                        <h2>Hotel Transylvania 2</h2>
+                                        <p>Khách Sạn Huyền Bí 2, Hotel Transylvania 2 tập trung vào mối quan hệ gia đình
+                                            khi ma cà rồng cổ Vlad, cha của Dracula, đến thị trấn lần đầu tiên sau nhiều
+                                            năm ở ẩn, mang theo một số bí mật. Chuyến thăm của Vlad tạo ra sự tàn phá
+                                            kinh hoàng cho Dracula, Mavis, Jonathan và các quý khách “ma quỷ” tại khách
+                                            sạn Transylvania. </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
 
     <!-- Skill -->
 
-    <section class="skill"></section>
+    <section class="skill section">
+        <div class="banner__dark"></div>
+        <div class="container">
+            <div class="title">
+                <h1>Skills</h1>
+            </div>
+            <div class="skill__content">
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="skill__left row">
+                            <div class="skill__item col-4">
+                                <i class="fab fa-java"></i>
+                                <h3>Java</h3>
+                            </div>
+                            <div class="skill__item col-4">
+                                <i class="fab fa-html5"></i>
+                                <h3>HTML</h3>
+                            </div>
+                            <div class="skill__item col-4">
+                                <i class="fab fa-css3-alt"></i>
+                                <h3>CSS</h3>
+                            </div>
+                            <div class="skill__item col-4">
+                                <i class="fab fa-sass"></i>
+                                <h3>SASS</h3>
+                            </div>
+                            <div class="skill__item col-4">
+                                <i class="fab fa-js"></i>
+                                <h3>Javascript</h3>
+                            </div>
+                            <div class="skill__item col-4">
+                                <i class="fab fa-bootstrap"></i>
+                                <h3>Bootstrap</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div class="col-6">
+                        <div class="skill__right ">
+
+                            <div class="ab-progress progress-inline skill__progress" data-progress="" data-value="65"
+                                data-title="HTML5"></div>
+                            <div class="ab-progress progress-inline skill__progress" data-progress="" data-value="65"
+                                data-title="CSS3"></div>
+                            <div class="ab-progress progress-inline skill__progress" data-progress="" data-value="55"
+                                data-title="SASS"></div>
+                            <div class="ab-progress progress-inline skill__progress" data-progress="" data-value="30"
+                                data-title="Javascript"></div>
 
 
-    <section class="protfolio"></section>
 
-    <section class="contact"></section>
+                        </div>
+
+
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+
+
+    <section class="protfolio section">
+        <div class="container">
+            <div class="title">
+                <h1>protfolio</h1>
+            </div>
+            <div class="protfolio__content section">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="protofolio__img">
+                            <div class="banner__dark"></div>
+
+                            <img src="./img/movie.png" alt="movie" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="portfolio__info">
+                            <a href="#" class="portfolio__title">Movie Star</a>
+                            <p>An E-commerce website to sell luxury watches. This project was built using React, Context
+                                API, Node, Express, MongoDB</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+
+                            </ul>
+                            <a class="btn button" href="https://duongsdbg1102.github.io/Movie/" target="_blank">Live</a>
+                            <a class="btn button" href="https://github.com/duongsdbg1102/Movie" target="_blank">Source
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="protfolio__content section">
+                <div class="row">
+
+                    <div class="col-5">
+                        <div class="portfolio__info">
+                            <a href="#" class="portfolio__title">Udemy</a>
+                            <p>An E-commerce website to sell luxury watches. This project was built using React, Context
+                                API, Node, Express, MongoDB</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+
+                            </ul>
+                            <a href="https://duongsdbg1102.github.io/Eleming/" class="btn button"
+                                target="_blank">Live</a>
+                            <a href="https://github.com/duongsdbg1102/Eleming" class="btn button" target="_blank">Source
+                                Code</a>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="protofolio__img">
+                            <div class="banner__dark"></div>
+
+                            <img src="./img/eleming.png" alt="elening" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="protfolio__content section">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="protofolio__img">
+                            <div class="banner__dark"></div>
+
+                            <img src="./img/MASSIVE.png" alt="movie" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="portfolio__info">
+                            <a href="#" class="portfolio__title">Movie Star</a>
+                            <p>An E-commerce website to sell luxury watches. This project was built using React, Context
+                                API, Node, Express, MongoDB</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+
+                            </ul>
+                            <a class="btn button" href="https://duongsdbg1102.github.io/DemoMassive/"
+                                target="_blank">Live</a>
+                            <a class="btn button" href="https://github.com/duongsdbg1102/DemoMassive"
+                                target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section">
+        <div class="container">
+            <div class="title">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="contact__content">
+                <div class="row">
+                    <div class="col-6">
+                        <h3>Thông Tin</h3>
+                        <ul>
+                            <li><i class="fa fa-podcast"></i> <span> Address: Hà Đông, Hà Nội, Việt Nam</span> </li>
+                            <li><i class="fa-solid fa-square-phone-flip"> </i><span> Phone: <a
+                                        href="tel:+84328041011">+84 328 041 011</a></span></li>
+                            <li><i class="fa fa-mail-bulk"></i><span>Email: <a
+                                        href="mailto:duongsdbg1102@gmail.com">duongsdbg1102@gmail.com</a> </span></li>
+                            <li><i class="fa fa-store-alt"></i> <span>Website: <a href="#">web</a></span> </li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <div class="contact__info">
+                            <h3>Liên hệ</h3>
+                            <form>
+                                <div class="form-group">
+
+                                    <input type="name" name="Tên" id="name" class="form-control " required>
+
+
+                                    <label for="name" class="form-label">Name</label>
+                                </div>
+                                <div class="form-group">
+
+                                    <input type="email " name="Email" id="email" class="form-control" required>
+
+                                    <label for="email" class="form-label">Email</label>
+                                </div>
+
+                                <div class="form-group ">
+
+                                    <textarea class="form-control form-messenger" id="Messenger" rows="7"
+                                        required></textarea>
+                                    <label for="Messenger" class="form-label">Messenger</label>
+                                </div>
+                                <button class="btn button" id="btnSubmit" type="submit">Submit</button>
+                            </form>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="">
+        <div class="container">
+            <div class="footer__cotent">
+               
+
+
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="footer__icon"> <a href="#"><i class="fa fa-store-alt"></i></a></div>
+
+
+
+                
+                <p>&copy;2022 Dai Duong .All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
 
 
 
@@ -86,13 +610,31 @@
 
 
 
-    <!-- BOOTSTRAP-B4 -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <!-- Jquery-JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- BS-4 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+    <!-- ICON -->
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+    <!-- WayPOINT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js"></script>
+    <!-- PROGRESS -->
+    <script src="./js/progressBar.js"></script>
+
+    <script>
+        $(".skill__progress").progressBar({
+            duration: 500,
+            height: 20,
+            autoplay: true,
+
+
+        });
+    </script>
+    <!-- MAIN-JS -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

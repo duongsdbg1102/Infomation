@@ -1,4 +1,5 @@
 header{
+    
     .navbar-brand{
         letter-spacing:$lt-3 ;
         color: $primary-11;
@@ -17,6 +18,48 @@ header{
                     &:hover{
                         color: $primary-5;
                     }
+                }
+                &.theme--dark{
+                    i{
+                    font-size: $fs-16;}
+                    .switch{
+                        position: relative;
+                        width: 50px;
+                        height: 25px;
+                        margin: 14px $mg-12 0;
+                        cursor: pointer;
+                       
+                        input{
+                            display: none;
+                            &:checked + .slider{
+                                &::before{
+                                    transform: translateX(22px);
+                                }
+                            }   
+                        }
+                        .slider{
+                            background-color: #ccc;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            border-radius: 34px;
+                            &::before{
+                                display: inline-block;
+                                content: "";
+                                width: 18px;
+                                height: 18px;
+                                border-radius: 50%;
+                                background-color: #fff;
+                                position: absolute;
+                                bottom: 4px;
+                                left: 4px;
+                                transition: all .5s;
+                            }
+                        
+                    }
+                }
                 }
             }
         }

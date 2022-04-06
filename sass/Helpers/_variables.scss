@@ -22,35 +22,51 @@ $primary-1: #513c06;
     $grey-9: #dae2ec;
     $grey-10: #f1f5f8;
     $white: #fff;
-
+    $white-1: #c5c5c5;
+    $black:#1d251c;
 //font family
 $ffamily:'Gruppo', cursive;
 //font-size
 $fs-8:8px;
-
+$fs-11:11px;
 $fs-14:14px;
 $fs-16:16px;
 
 $fs-18:18px;
 $fs-20:20px;
+$fs-24:24px;
+
 $fs-26:26px;
+$fs-28:26px;
+
 $fs-30:30px;
+$fs-40:40px;
 
 $fs-60:60px;
+$fs-64:64px;
 
 //line-height
-$lh-1:1.5;
+$lh-1:1;
+$lh-15:1.5;
+
 $lh-2:normal;
 $lh-24:24px;
 $lh-30:30px;
-
+$lh-125:1.25;
 //letter-spacing
 $lt-1:1.5;
+
+
+$lt-025:.25rem;
+$lt-05:.05rem;
+$lt-015:.15rem;
+
 $lt-2:2px;
 $lt-3:3px;
 $lt-30:30px;
 // font-weight:
 $fw-bold:bold;
+$fw-400:400;
 
 $fw-500:500;
 $fw-600:600;
@@ -58,12 +74,28 @@ $fw-700:700;
 
 // padđing
 $pd-5:5px;
+$pd-6:6px;
+$pd-12:12px;
+$pd-15:15px;
+$pd-20:20px;
+
+$pd-30:30px;
+$pd-35:35px;
+ $pd-70:70px;
+$pd-80:80px;
+
 //magrin
 $mg-8:8px;
-$mg-20:20px;
-$mg-24:24px;
-$mg-45:45px;
+$mg-12:12px;
+$mg-16:16px;
+$mg-18:18px;
 
+$mg-20:20px;
+
+$mg-24:24px;
+$mg-35:35px;
+$mg-45:45px;
+$mg-48:48px;
 
 $breakpoints:(
     

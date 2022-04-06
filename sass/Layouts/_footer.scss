@@ -1,0 +1,21 @@
+footer{
+    padding: $pd-30 + 2;
+    background-color: $black;
+    .footer__cotent{
+        text-align: center;
+        .footer__icon{
+            display: inline-block;
+            margin: $mg-35 - 3 $mg-48;
+            
+            a{
+              @include styleText($primary-5,$fs-24,$fw-500);
+                &:hover{
+                    color:$primary-7;
+                }
+            }
+        }
+        p{
+            @include styleText($white,$fs-20,$fw-500);
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.contact {
+    background-color: $grey-10;
+    .contact__content {
+        h3 {
+            margin-bottom: $mg-35 - 3;
+        }
+        ul {
+            li {
+                display: flex;
+                flex-direction: row;
+                @include styleText($grey-1, $fs-16, $fw-400);
+                margin-bottom: $mg-35 - 3;
+                list-style: none;
+                i {
+                    width: 16px;
+                    font-size: $fs-16;
+                    margin-right: $mg-12;
+                }
+                a {
+                    @include styleText($grey-1, $fs-16, $fw-500);
+                    transition: all 0.4s;
+                    &:hover {
+                        color: $primary-5;
+                    }
+                }
+            }
+        }
+        .contact__info {
+            .form-group {
+                
+                position: relative;
+               
+                margin-bottom: 35px;
+                span{
+                    font-size: $fs-14;
+                    margin-top: $mg-12;
+                   
+                }
+                .form-control {
+                    border-radius: 0;
+                    border-color: $grey-1;
+                    transition: border-color 0.7s;
+                    &.form-messenger {
+                        resize: unset;
+                    
+                    }
+                    &:focus {
+                        box-shadow: none;
+                        border-color: $primary-7;
+                    }
+                    &:hover {
+                        border-color: $primary-7;
+                        .form-label {
+                            color: $primary-7;
+                        }
+                    }
+                }
+
+                .form-label {
+                    pointer-events: none;
+                    position: absolute;
+                    top: 7px;
+                    left: 5px;
+                    @include styleText($grey-3, $fs-14, $fw-400);
+                    transition: all 0.5s;
+                    opacity: .8;
+                }
+                .form-control:focus ~ .form-label,
+                .form-control:not(:focus):valid ~ .form-label {
+                    top: -18px;
+                    color: $primary-5;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

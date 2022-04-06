@@ -1,0 +1,39 @@
+.skill{
+    position: relative;
+    background-color:#f1f5f8 ;
+    
+    
+    .banner__dark{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+   
+    .skill__content{
+       
+
+        .skill__left{
+            .skill__item{
+                text-align: center;
+                margin-bottom: $mg-20;
+                i{
+                    font-size: $fs-40;
+                    margin-bottom: $mg-8;
+                }
+                h3{
+                    font-size: $fs-20;
+                }
+            }
+        }
+        .skill__right{
+            .skill__progress{
+                height: 35px;
+                &.ab-progress-bar{
+                    width: 35px;
+                }
+            }
+        }
+    }
+}

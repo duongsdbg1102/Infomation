@@ -1,0 +1,71 @@
+.protfolio{
+    .protfolio__content{
+        border-bottom: 1.5px dashed $grey-1;
+        
+        .protofolio__img{
+            position: relative;
+            height: 100%;
+            .banner__dark{
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.3);
+                top: 0;
+                left: 0;
+                transition: all .3s;
+            }
+            img{
+                height: 100%;
+                object-fit: revert;
+                opacity: .8;
+                transition: all .3s;
+            }
+           
+        }
+        .portfolio__info{
+            
+            .portfolio__title{
+            @include styleText($grey-1,$fs-24,$fw-700);
+            text-transform: uppercase;
+            margin-bottom: $mg-16;
+            line-height: $lh-1;
+            letter-spacing: $lt-025;
+            display: block;
+            }
+            p{
+                @include styleText($grey-1,$fs-20 + 1,$fw-400);
+                line-height:$lh-15;
+                margin: $mg-8 0;
+            }
+            ul{
+                
+                padding: $pd-15 + 1;
+                li{
+                    list-style: square;
+                    @include styleText($grey-1,$fs-11,$fw-400);
+                    letter-spacing:$lt-015;
+                    text-transform:uppercase;
+                    line-height: $lh-15;
+                }
+            }
+            .button{
+                display: block;
+                width: 100%;
+                margin: $mg-20 $mg-16 0 0;
+                a{
+                    font-size: $fs-14;
+                }
+            }
+        }
+      &:hover{
+        .banner__dark{
+            background:none;
+        }
+        img{
+            transform: scale(1.03);
+            opacity: 1;
+        }
+      }
+    }
+}

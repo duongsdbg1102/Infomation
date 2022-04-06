@@ -10,5 +10,33 @@ body {
     font-family: "Nunito", sans-serif;
     font-weight: $fw-500;
     color: $grey-1;
-    line-height: $lh-1;
+    line-height: $lh-15;
+}
+.section{
+    padding:$pd-80 0 ;
+}
+a{
+    text-decoration: none;
+    
+    &:hover{
+        text-decoration: none;
+    }
+}
+.title{
+    h1{
+        text-align: center;
+        @include styleText($grey-1,$fs-40,$fw-bold);
+        letter-spacing: $lt-025;
+        text-transform: capitalize;
+        &::after{
+            content: "";
+            display: block;
+            width: 5rem;
+            height: 0.25rem;
+            background: linear-gradient(135deg, $primary-5, $primary-7,);
+                       margin: $mg-12 auto 0;
+        }
+
+    }
+    margin-bottom: 4rem;
 }
