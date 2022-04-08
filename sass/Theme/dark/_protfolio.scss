@@ -1,0 +1,21 @@
+.darkMode {
+    .protfolio {
+        .protfolio__content {
+            border-bottom-color: $white;
+            .portfolio__info {
+                .portfolio__title {
+                    color: $white;
+                }
+                p{
+                    color: $white;
+                }
+                ul{
+                    li{
+                        color: $white;
+                    
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.darkMode {
+    .about {
+        .about__title {
+            color: $white;
+        }
+    
+    p {
+        color: $color-Greydark;
+    }
+    .about__content {
+        .nav-tabs {
+            .nav-item {
+                .nav-link {
+                    p {
+                        color: $grey-5;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            .about__text {
+                .timeline {
+                    h3 {
+                        color: $white;
+                    }
+                    p{
+                        color:#c9c3aa;
+                        &:last-child{
+                            color: $color-Greydark; 
+                        }
+                    }
+                }
+                .about__game{
+                    background: white;
+                    h2{
+                        color: $color-Dark1;
+
+                    }
+                    p{
+                        color: $color-Dark1;
+                    }
+                }
+            }
+        }
+    }}
+}

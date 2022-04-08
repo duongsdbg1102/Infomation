@@ -3,13 +3,7 @@
     background-color:#f1f5f8 ;
     
     
-    .banner__dark{
-        position: absolute;
-        width: 50%;
-        height: 100%;
-        top: 0;
-        right: 0;
-    }
+  
    
     .skill__content{
        
@@ -38,8 +32,11 @@
     }
 }
 //REPONSIVE
-@include responsive('medium'){
+@include responsive('large'){
     .skill__left{
         margin-bottom: $mg-35;
+    }
+    .skill__right{
+        margin: 0 $mg-60 + 5;
     }
 }

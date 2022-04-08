@@ -7,6 +7,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  background-color: #fff;
   font-family: "Nunito", sans-serif;
   font-weight: 500;
   color: #102a42;
@@ -41,7 +42,13 @@ a {
   width: 90%;
   margin: 0 auto; }
 
-@media screen and (max-width: 768px) {
+.darkMode {
+  background-color: #072026;
+  color: #fff; }
+  .darkMode .title h1 {
+    color: #fff; }
+
+@media screen and (max-width: 992px) {
   .title h1 {
     text-align: left; }
     .title h1::after {
@@ -87,7 +94,8 @@ header {
     width: 90%;
     margin: 0 auto;
     padding: 1rem;
-    transition: all .4s; }
+    transition: all 0.4s;
+    flex-wrap: wrap; }
     header .navbar .navbar-brand {
       letter-spacing: 3px;
       color: #F3E08F; }
@@ -388,12 +396,6 @@ header {
 .skill {
   position: relative;
   background-color: #f1f5f8; }
-  .skill .banner__dark {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    right: 0; }
   .skill .skill__content .skill__left .skill__item {
     text-align: center;
     margin-bottom: 20px; }
@@ -407,9 +409,12 @@ header {
     .skill .skill__content .skill__right .skill__progress.ab-progress-bar {
       width: 35px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .skill__left {
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+
+  .skill__right {
+    margin: 0 65px; } }
 .protfolio .protfolio__content {
   border-bottom: 1.5px dashed #102a42; }
   .protfolio .protfolio__content .protofolio__img {
@@ -437,7 +442,8 @@ header {
     line-height: 1.5;
     margin: 8px 0; }
   .protfolio .protfolio__content .portfolio__info ul {
-    padding: 16px; }
+    padding: 16px;
+    flex-wrap: wrap; }
     .protfolio .protfolio__content .portfolio__info ul li {
       list-style: square;
       color: #102a42;
@@ -464,8 +470,6 @@ header {
     box-shadow: 0 0 10px 4px #00000066;
     border-bottom: none;
     margin-bottom: 48px; }
-    .protfolio .protfolio__content img {
-      border: 0.5px solid white; }
     .protfolio .protfolio__content .portfolio__info {
       padding: 16px; }
       .protfolio .protfolio__content .portfolio__info .button--protfolio {
@@ -565,13 +569,17 @@ footer {
   border-radius: .5rem;
   letter-spacing: 0.05rem;
   transition: all .5s; }
-  .button a {
-    color: #102a42; }
   .button:hover {
     background-color: #f9da8b;
     transform: scale(1.05); }
   .button:focus {
     box-shadow: none; }
+
+.darkMode .button {
+  background-color: #efd871;
+  color: #fff; }
+  .darkMode .button:hover {
+    background-color: #a7974e; }
 
 .theme--dark {
   display: flex;
@@ -620,7 +628,8 @@ footer {
 .changeOp i:first-child {
   opacity: 0.2; }
 .changeOp i:last-child {
-  opacity: 1; }
+  opacity: 1;
+  color: #fff; }
 
 @media screen and (max-width: 992px) {
   .theme--dark {
@@ -628,5 +637,59 @@ footer {
     margin: 10px 30px 20px 0; }
     .theme--dark i:last-child {
       color: #fff; } }
+.darkMode header .navbar .navbar-nav .nav-item .nav-link {
+  color: #fff; }
+
+.darkMode .silder {
+  background: #051418; }
+  .darkMode .silder .silder__left h1 {
+    color: #fff; }
+  .darkMode .silder .silder__left p {
+    color: #f9efc5; }
+
+.darkMode .about .about__title {
+  color: #fff; }
+.darkMode .about p {
+  color: #f9efc5; }
+.darkMode .about .about__content .nav-tabs .nav-item .nav-link p {
+  color: #617d98; }
+.darkMode .about .about__content .tab-content .about__text .timeline h3 {
+  color: #fff; }
+.darkMode .about .about__content .tab-content .about__text .timeline p {
+  color: #c9c3aa; }
+  .darkMode .about .about__content .tab-content .about__text .timeline p:last-child {
+    color: #f9efc5; }
+.darkMode .about .about__content .tab-content .about__text .about__game {
+  background: white; }
+  .darkMode .about .about__content .tab-content .about__text .about__game h2 {
+    color: #051418; }
+  .darkMode .about .about__content .tab-content .about__text .about__game p {
+    color: #051418; }
+
+.darkMode .skill {
+  background-color: #051418; }
+
+.darkMode .protfolio .protfolio__content {
+  border-bottom-color: #fff; }
+  .darkMode .protfolio .protfolio__content .portfolio__info .portfolio__title {
+    color: #fff; }
+  .darkMode .protfolio .protfolio__content .portfolio__info p {
+    color: #fff; }
+  .darkMode .protfolio .protfolio__content .portfolio__info ul li {
+    color: #fff; }
+
+.darkMode .contact {
+  background-color: #051418; }
+  .darkMode .contact .contact__content ul li {
+    color: #fff; }
+    .darkMode .contact .contact__content ul li a {
+      color: #fff; }
+  .darkMode .contact .contact__content .contact__info .form-group .form-control {
+    background: none;
+    border-color: #fff;
+    color: #fff; }
+  .darkMode .contact .contact__content .contact__info .form-group .form-label {
+    color: #fff;
+    opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

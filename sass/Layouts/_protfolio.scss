@@ -33,6 +33,7 @@
             ul{
                 
                 padding: $pd-15 + 1;
+                flex-wrap: wrap;
                 li{
                     list-style: square;
                     @include styleText($grey-1,$fs-11,$fw-400);
@@ -83,10 +84,7 @@
             box-shadow: 0 0 10px 4px #00000066;
                border-bottom: none;
                margin-bottom: $mg-48;
-               img{
-                border: 0.5px solid white;
-
-               }
+               
                .portfolio__info{
                    padding: $pd-15 + 1;
                    .button--protfolio{

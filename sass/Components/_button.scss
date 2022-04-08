@@ -7,14 +7,21 @@
     border-radius: .5rem;
     letter-spacing: $lt-05 ;
     transition: all .5s;
-    a{
-        color: $grey-1;
-    }
+    
     &:hover{
         background-color: $primary-7;
         transform: scale(1.05);
     }
     &:focus{
         box-shadow: none;
+    }
+}
+.darkMode{
+    .button{
+        background-color: $color-primaryDark-1;
+        color: $white;
+        &:hover{
+            background-color: $color-primaryDark-2;
+        }
     }
 }

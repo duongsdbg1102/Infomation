@@ -1,0 +1,28 @@
+.darkMode {
+    .contact {
+        background-color: $color-Dark1;
+        .contact__content {
+            ul {
+                li {
+                    color: $white;
+                    a{
+                        color: $white;
+                    }
+                }
+            }
+            .contact__info{
+                .form-group{
+                .form-control {
+                    background: none;
+                    border-color:$white ;
+                    color: $white;
+                }
+                .form-label{
+                    color: $white;
+                    opacity: 1;
+                }
+            }
+            }
+        }
+    }
+}

@@ -4,74 +4,58 @@ header {
     transition: all 0.4s;
     transform: translateY(0);
     position: fixed;
-   
+
     .navbar {
-      
         width: 90%;
         margin: 0 auto;
         padding: 1rem;
-       transition: all .4s;
+        transition: all 0.4s;
+        flex-wrap: wrap;
         .navbar-brand {
             letter-spacing: $lt-3;
             color: $primary-11;
         }
-       
-      
-                
-            .navbar-nav {
-                margin-left: auto;
-               
-                .nav-item {
-                    margin-right: 1.5rem;
-                    .nav-link {
-                        font-family: $ffamily;
-                        @include styleText($grey-1, $fs-20, $fw-700);
-                        letter-spacing: $lt-3;
-                        text-transform: capitalize;
-                        transition: 0.2s;
-                        &:hover {
-                            color: $primary-5;
-                        }
+
+        .navbar-nav {
+            margin-left: auto;
+
+            .nav-item {
+                margin-right: 1.5rem;
+                .nav-link {
+                    font-family: $ffamily;
+                    @include styleText($grey-1, $fs-20, $fw-700);
+                    letter-spacing: $lt-3;
+                    text-transform: capitalize;
+                    transition: 0.2s;
+                    &:hover {
+                        color: $primary-5;
                     }
                 }
-            
-         
+            }
         }
     }
 }
-
 
 //REPONSIVE
 //992px
 @include responsive("large") {
     header {
         .navbar {
-           
-           
-            
-                .navbar-nav {
-                    background-color: rgba(0, 0, 0, .9);
-                    text-align: center;
-                    .nav-item {
-                     
-                        .nav-link {
-                            font-family: $ffamily-1;
-                            text-transform: uppercase;
-                            @include styleText($white,$fs-14,$fw-400);
-                           
-                           
-                        }
+            .navbar-nav {
+                background-color: rgba(0, 0, 0, 0.9);
+                text-align: center;
+                .nav-item {
+                    .nav-link {
+                        font-family: $ffamily-1;
+                        text-transform: uppercase;
+                        @include styleText($white, $fs-14, $fw-400);
                     }
                 }
-             
-                
-            .navbar-toggler{
-               color: $primary-12;
-               
+            }
 
+            .navbar-toggler {
+                color: $primary-12;
             }
         }
     }
-    
 }
-

@@ -63,9 +63,11 @@
         }
         &:last-child {
             opacity: 1;
+            color: $white;
         }
     }
 }
+
 //REPONSIVE
 //992px
 @include responsive("large") {
