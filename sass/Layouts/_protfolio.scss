@@ -5,21 +5,13 @@
         .protofolio__img{
             position: relative;
             height: 100%;
-            .banner__dark{
-                display: block;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.3);
-                top: 0;
-                left: 0;
-                transition: all .3s;
-            }
+            
             img{
                 height: 100%;
                 object-fit: revert;
-                opacity: .8;
-                transition: all .3s;
+                object-position:top;
+                transition: all 1s;
+                filter: brightness(45%) grayscale(1);
             }
            
         }
@@ -34,7 +26,7 @@
             display: block;
             }
             p{
-                @include styleText($grey-1,$fs-20 + 1,$fw-400);
+                @include styleText($grey-1,$fs-20,$fw-400);
                 line-height:$lh-15;
                 margin: $mg-8 0;
             }
@@ -59,13 +51,61 @@
             }
         }
       &:hover{
-        .banner__dark{
-            background:none;
-        }
+        
         img{
-            transform: scale(1.03);
-            opacity: 1;
+           
+            filter: brightness(100%) grayscale(0);
         }
       }
+    }
+}
+
+//REPONSIVE
+//992px
+@include responsive("large"){
+    .protfolio{
+        
+        .protfolio__content{
+            .protofolio__img{
+               img{
+                object-fit: scale-down;
+               }
+            }
+        }
+    }
+}
+//768px
+@include responsive("medium"){
+    .protfolio{
+        
+        .protfolio__content{
+            padding:0;
+            box-shadow: 0 0 10px 4px #00000066;
+               border-bottom: none;
+               margin-bottom: $mg-48;
+               img{
+                border: 0.5px solid white;
+
+               }
+               .portfolio__info{
+                   padding: $pd-15 + 1;
+                   .button--protfolio{
+                       display: flex;
+                       flex-direction: row;
+                   }
+                   
+                   ul{
+                       display: flex;
+                       
+                       li{
+                           margin-right: $mg-35;
+                       }
+                   }
+                  
+               }
+               .protfolio--even{
+                flex-direction: column-reverse;
+               }
+        }
     }
 }

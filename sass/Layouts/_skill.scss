@@ -37,3 +37,9 @@
         }
     }
 }
+//REPONSIVE
+@include responsive('medium'){
+    .skill__left{
+        margin-bottom: $mg-35;
+    }
+}

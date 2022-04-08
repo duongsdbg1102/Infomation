@@ -11,6 +11,7 @@ $primary-1: #513c06;
     $primary-9: #fceec5;
     $primary-10: #fffaeb;
     $primary-11: #F3E08F;
+    $primary-12:#fbbd61;
     $grey-1: #102a42;
     $grey-2: #243a52;
     $grey-3: #324d67;
@@ -24,8 +25,12 @@ $primary-1: #513c06;
     $white: #fff;
     $white-1: #c5c5c5;
     $black:#1d251c;
+    $black-1:#333;
+    $blue:#3B5998;
+    $pink:#e1306c;
 //font family
 $ffamily:'Gruppo', cursive;
+$ffamily-1:'Roboto', sans-serif;
 //font-size
 $fs-8:8px;
 $fs-11:11px;
@@ -93,15 +98,19 @@ $mg-18:18px;
 $mg-20:20px;
 
 $mg-24:24px;
+$mg-30:30px;
+
 $mg-35:35px;
 $mg-45:45px;
 $mg-48:48px;
+$mg-60:60px;
 
+$mg-70:70px;
 $breakpoints:(
     
     'extra-large':1200px,
     'large':992px,
-  
+    'large-900':900px,
     'medium':768px,
     
     'small':576px,

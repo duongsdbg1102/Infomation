@@ -1,68 +1,77 @@
-header{
-    
-    .navbar-brand{
-        letter-spacing:$lt-3 ;
-        color: $primary-11;
-    }
-    .collapse{
-        .navbar-nav{
-            
-            .nav-item{
-                margin-right: 1.5rem;
-                .nav-link{
-                    font-family: $ffamily;
-                    @include styleText($grey-1,$fs-20,$fw-700);
-                    letter-spacing: $lt-3;
-                    text-transform: capitalize;
-                    transition: .2s;
-                    &:hover{
-                        color: $primary-5;
-                    }
-                }
-                &.theme--dark{
-                    i{
-                    font-size: $fs-16;}
-                    .switch{
-                        position: relative;
-                        width: 50px;
-                        height: 25px;
-                        margin: 14px $mg-12 0;
-                        cursor: pointer;
-                       
-                        input{
-                            display: none;
-                            &:checked + .slider{
-                                &::before{
-                                    transform: translateX(22px);
-                                }
-                            }   
+header {
+    width: 100%;
+    z-index: 10;
+    transition: all 0.4s;
+    transform: translateY(0);
+    position: fixed;
+   
+    .navbar {
+      
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+       transition: all .4s;
+        .navbar-brand {
+            letter-spacing: $lt-3;
+            color: $primary-11;
+        }
+       
+      
+                
+            .navbar-nav {
+                margin-left: auto;
+               
+                .nav-item {
+                    margin-right: 1.5rem;
+                    .nav-link {
+                        font-family: $ffamily;
+                        @include styleText($grey-1, $fs-20, $fw-700);
+                        letter-spacing: $lt-3;
+                        text-transform: capitalize;
+                        transition: 0.2s;
+                        &:hover {
+                            color: $primary-5;
                         }
-                        .slider{
-                            background-color: #ccc;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            bottom: 0;
-                            right: 0;
-                            border-radius: 34px;
-                            &::before{
-                                display: inline-block;
-                                content: "";
-                                width: 18px;
-                                height: 18px;
-                                border-radius: 50%;
-                                background-color: #fff;
-                                position: absolute;
-                                bottom: 4px;
-                                left: 4px;
-                                transition: all .5s;
-                            }
-                        
                     }
                 }
+            
+         
+        }
+    }
+}
+
+
+//REPONSIVE
+//992px
+@include responsive("large") {
+    header {
+        .navbar {
+           
+           
+            
+                .navbar-nav {
+                    background-color: rgba(0, 0, 0, .9);
+                    text-align: center;
+                    .nav-item {
+                     
+                        .nav-link {
+                            font-family: $ffamily-1;
+                            text-transform: uppercase;
+                            @include styleText($white,$fs-14,$fw-400);
+                           
+                           
+                        }
+                    }
                 }
+             
+                
+            .navbar-toggler{
+               color: $primary-12;
+               
+
             }
         }
     }
-
+    
 }
+

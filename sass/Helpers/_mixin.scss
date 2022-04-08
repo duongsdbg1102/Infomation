@@ -1,22 +1,35 @@
-@mixin styleText($color,$fs,$fw) {
+@mixin styleText($color, $fs, $fw) {
     color: $color;
-    font-size: $fs ;
-    font-weight:$fw ;
+    font-size: $fs;
+    font-weight: $fw;
 }
-@mixin arrow($size,$direction,$color) {
-    border-style:solid;
+@mixin arrow($size, $direction, $color) {
+    border-style: solid;
     border-color: transparent;
     display: inline-block;
-    border-width:$size;
-    @if $direction == up{
-        border-bottom-color:$color;
-    } @else if $direction == down{
-        border-top-color:$color ;
-    } @else if $direction == right{
-        border-left-color:$color ;
-    } @else if $direction == left{
-        border-right-color:$color ;
+    border-width: $size;
+    @if $direction == up {
+        border-bottom-color: $color;
+    } @else if $direction == down {
+        border-top-color: $color;
+    } @else if $direction == right {
+        border-left-color: $color;
+    } @else if $direction == left {
+        border-right-color: $color;
     } @else {
         @error "Unkown direction:#{$direction}.";
+    }
+}
+@mixin responsive($screen) {
+    @if map-has-key($map: $breakpoints, $key: $screen) {
+        $varlue: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+        @media screen and (max-width: $varlue) {
+            @content;
+        }
+    } @else {
+        @warn "`{$screen}` isn't valid";
     }
 }

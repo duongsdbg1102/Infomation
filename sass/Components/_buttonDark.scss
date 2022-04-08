@@ -1,0 +1,84 @@
+//sibarmini
+.theme--dark {
+    display: flex;
+    align-items: center;
+    i {
+        &:first-child {
+            color: orange;
+        }
+        &:last-child {
+            opacity: 0.2;
+        }
+        font-size: $fs-20;
+    }
+
+    .switch {
+        position: relative;
+        width: 46px;
+        height: 22px;
+        margin: 0 $mg-8;
+        cursor: pointer;
+
+        input {
+            display: none;
+            &:checked + .slider {
+                background-image: url("../../img/moon.jpg");
+                &::before {
+                    background-color: $white;
+                    transform: translateX(24px);
+                }
+            }
+        }
+
+        .slider {
+            background-image: url("../img/sun.jpg");
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 34px;
+            border: 3px solid $primary-5;
+
+            &::before {
+                display: inline-block;
+                content: "";
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: $grey-1;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+.changeOp {
+    i {
+        &:first-child {
+            opacity: 0.2;
+        }
+        &:last-child {
+            opacity: 1;
+        }
+    }
+}
+//REPONSIVE
+//992px
+@include responsive("large") {
+    .theme--dark {
+        justify-content: center;
+        margin: $mg-12 - 2 $mg-30 $mg-20 0;
+        i {
+            
+            &:last-child {
+                color: $white;
+            }
+           
+        }
+    }
+
+}

@@ -1,6 +1,10 @@
 .silder {
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
-
+    background: $primary-10;
+    padding-top: 130px;
+    .slider__content {
+        width: 90%;
+        margin: 0 auto;
+    }
     .silder__left {
         margin-top: 25%;
         h1 {
@@ -22,54 +26,90 @@
             margin: $mg-20 $mg-16 0 0;
         }
         .slider__item {
-            margin-top: $mg-48;
-           
+            margin-top: $mg-60;
+
             .slider__icon {
                 position: relative;
                 display: inline-block;
                 text-align: center;
-                span{
+                span {
                     position: absolute;
                     box-shadow: 0 10px 10px #0000001a;
                     background-color: red;
                     padding: $pd-6 $pd-12;
                     border-radius: 16px;
-                    bottom: 55px;
-                    left:-7px;
-                    opacity: 1;
+                    bottom: 0;
+                    left: -7px;
+                    opacity: 0;
                     z-index: 0;
-                    
-                    &.github{
-                        left:2px;
+
+                    pointer-events: none;
+
+                    &.facebook {
+                        background-color: $blue;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -15px;
+                            left: 43%;
+                            @include arrow($fs-8, down, $blue);
+                        }
                     }
-                    &::after{
-                       
-                        content: "";
-                        position: absolute;
-                        bottom: -15px;
-                        left: 43%;
-                        @include arrow($fs-8,down,$white);
+                    &.instagram {
+                        background-color: $pink;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -15px;
+                            left: 43%;
+                            @include arrow($fs-8, down, $pink);
+                        }
+                    }
+                    &.github {
+                        background-color: $black-1;
+                        left: 2px;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -15px;
+                            left: 43%;
+                            @include arrow($fs-8, down, $black-1);
+                        }
                     }
                 }
                 a {
-                    
                     box-shadow: 0 10px 10px #0000001a;
-                    @include styleText($grey-1, $fs-24, $fw-500);
+                    @include styleText($black, $fs-24, $fw-500);
                     display: block;
                     width: 45px;
                     height: 45px;
                     line-height: 46px;
-                    background-color: black;
+                    background-color: $grey-10;
                     border-radius: 50%;
                     margin: 0 $mg-20;
                     position: relative;
-                    &:hover,.slider__text{
-                       background-color: blue;
-                      
+                    transition: all 0.4s;
+                    &.facebook:hover {
+                        color: $white;
+                        background-color: $blue;
                     }
+                    &.instagram:hover {
+                        color: $white;
 
+                        background-color: $pink;
+                    }
+                    &.github:hover {
+                        color: $white;
+
+                        background-color: $black-1;
+                    }
+                    &:hover ~ .slider__text {
+                        color: $white;
+                        bottom: 55px;
+                        opacity: 1;
+                        transition: all 0.5s;
+                    }
                 }
-               
             }
         }
     }
@@ -86,14 +126,46 @@
             height: 500px;
             top: 17px;
             left: 20px;
-            border-radius: 15px;
+            border-radius: 0.5rem;
         }
         img {
             z-index: 2;
             position: relative;
-            border-radius: 15px;
+            border-radius: 0.5rem;
             width: 100%;
             height: 500px;
         }
     }
 }
+//REPONSIVE
+@include responsive("medium") {
+    .silder {
+        .slider__content{
+            text-align: center;
+        }
+        .silder__left {
+
+            
+            margin-top: 0;
+            margin-bottom: $mg-48;
+            h1{
+                letter-spacing: .1rem;
+            }
+        }
+        .silider__right {
+          
+            max-width: 25rem;
+            max-height: 35rem;
+             margin: 0 auto;
+            &::after {
+                display: none;
+                
+            }
+          img{
+              align-items: center;
+              
+          }
+        }
+    }
+}
+

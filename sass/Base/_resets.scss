@@ -40,3 +40,18 @@ a{
     }
     margin-bottom: 4rem;
 }
+.container--width{
+    width: 90%;
+    margin: 0 auto;
+}
+//REPONSIVE
+@include responsive('medium'){
+    .title{
+        h1{
+            text-align: left;
+            &::after{
+                margin: $mg-12 0 0;
+            }
+        }
+    }
+}
