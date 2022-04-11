@@ -1,14 +1,13 @@
 header {
     width: 100%;
-    z-index: 10;
+    z-index: 150;
     transition: all 0.4s;
     transform: translateY(0);
     position: fixed;
 
     .navbar {
-        width: 90%;
-        margin: 0 auto;
-        padding: 1rem;
+      
+      
         transition: all 0.4s;
         flex-wrap: wrap;
         .navbar-brand {
@@ -17,7 +16,7 @@ header {
         }
 
         .navbar-nav {
-            margin-left: auto;
+           
 
             .nav-item {
                 margin-right: 1.5rem;

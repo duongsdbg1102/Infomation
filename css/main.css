@@ -86,33 +86,28 @@ a {
     transform: translateX(-55%) scale(1.2); } }
 header {
   width: 100%;
-  z-index: 10;
+  z-index: 150;
   transition: all 0.4s;
   transform: translateY(0);
   position: fixed; }
   header .navbar {
-    width: 90%;
-    margin: 0 auto;
-    padding: 1rem;
     transition: all 0.4s;
     flex-wrap: wrap; }
     header .navbar .navbar-brand {
       letter-spacing: 3px;
       color: #F3E08F; }
-    header .navbar .navbar-nav {
-      margin-left: auto; }
-      header .navbar .navbar-nav .nav-item {
-        margin-right: 1.5rem; }
-        header .navbar .navbar-nav .nav-item .nav-link {
-          font-family: "Gruppo", cursive;
-          color: #102a42;
-          font-size: 20px;
-          font-weight: 700;
-          letter-spacing: 3px;
-          text-transform: capitalize;
-          transition: 0.2s; }
-          header .navbar .navbar-nav .nav-item .nav-link:hover {
-            color: #e9b949; }
+    header .navbar .navbar-nav .nav-item {
+      margin-right: 1.5rem; }
+      header .navbar .navbar-nav .nav-item .nav-link {
+        font-family: "Gruppo", cursive;
+        color: #102a42;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        transition: 0.2s; }
+        header .navbar .navbar-nav .nav-item .nav-link:hover {
+          color: #e9b949; }
 
 @media screen and (max-width: 992px) {
   header .navbar .navbar-nav {
@@ -684,6 +679,8 @@ footer {
     color: #fff; }
     .darkMode .contact .contact__content ul li a {
       color: #fff; }
+      .darkMode .contact .contact__content ul li a:hover {
+        color: #e9b949; }
   .darkMode .contact .contact__content .contact__info .form-group .form-control {
     background: none;
     border-color: #fff;
