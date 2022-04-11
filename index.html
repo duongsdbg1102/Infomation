@@ -22,17 +22,17 @@
     <!-- ICON TITLE -->
     <link rel="icon" href="./img/Logo.png">
     <!-- //progress -->
-    <link rel="stylesheet" href="./css/progressBar.min.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
     <!-- FADE AOS -->
     <link href="./css/aos.css" rel="stylesheet">
     <!-- MAIN-CSS -->
-    
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body   >
+<body>
     <!-- Header -->
-    <header id="headerMain" >
+    <header id="headerMain">
         <div class="header__content container">
 
             <nav class="navbar navbar-expand-lg ">
@@ -42,22 +42,22 @@
                     aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <div  class="collapse navbar-collapse  " id="HeaderNavBar">
+                <div class="collapse navbar-collapse  " id="HeaderNavBar">
                     <ul class="navbar-nav ml-lg-auto ">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Protfolio</a>
+                            <a class="nav-link" href="#protfolio">Protfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <div class="theme--dark">
                             <i class="fa fa-sun dark--sun"></i>
@@ -76,7 +76,7 @@
                 </div>
 
             </nav>
-           
+
         </div>
     </header>
 
@@ -88,21 +88,21 @@
                     <div class="silder__left ">
                         <h1>i'm a web developer</h1>
                         <p>I love building beautiful web experience</p>
-                        <a href="#" class="btn button">ABOUT ME</a>
-                        <a href="" class="btn button">PORTFOLIO</a>
+                        <a href="#about" class="btn button">ABOUT ME</a>
+                        <a href="#protfolio" class="btn button">PORTFOLIO</a>
                         <div class="slider__item">
 
                             <div class="slider__icon">
-                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/duongsd1999/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                 <span class="slider__text facebook">Facebook</span>
                             </div>
-                            <div class="slider__icon"> <a href="#" class="instagram"><i
+                            <div class="slider__icon"> <a href="https://www.instagram.com/dodaiduonggg/" target="_blank" class="instagram"><i
                                         class="fab fa-instagram"></i></a>
 
                                 <span class="slider__text instagram">Instagram</span>
                             </div>
                             <div class="slider__icon ">
-                                <a href="#" class="github"><i class="fab fa-github "></i></a>
+                                <a href="https://github.com/duongsdbg1102" target="_blank" class="github"><i class="fab fa-github "></i></a>
                                 <span class="github slider__text">GitHub</span>
                             </div>
 
@@ -121,12 +121,11 @@
         </div>
     </section>
     <!-- AboutMe -->
-    <section class="about section">
+    <section id="about" class="about section">
 
         <div class="container--width">
             <div class="title">
-                <h1 data-aos="fade-down" data-aos-easing="linear"
-                data-aos-duration="900">About Me</h1>
+                <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">About Me</h1>
             </div>
             <div class="about__content">
 
@@ -177,11 +176,11 @@
                             <p>Mình tên là Dương, hiện tại đang là sinh viên của trường ĐH Học Viện Công Nghệ Bưu Chính
                                 Viễn Thông và học chuyên ngành Điện Tử Viễn Thông.
                             </p>
-                            <p>Thời gian gần đây mình tình cờ biết đến trang F8, các video ở đây dạy rất tận tâm và dễ
-                                hiểu, cảm ơn anh Sơn
-                                đã tạo ra trang web này giúp bản thân mình và mọi người có cơ hội trau dồi thêm kiến
+                            <p>Thời gian gần đây mình tình cờ biết đến CyberSorft, các video ở đây dạy rất tận tâm và dễ
+                                hiểu,
+                                CyberSorft giúp bản thân mình và mọi người có cơ hội trau dồi thêm kiến
                                 thức. Sau 1 khoảng thời gian
-                                học tập tại đây, mình đã hoàn thành khóa JavaScript căn bản và sẽ tiếp tục học các khóa
+                                học tập tại đây, mình đã nắm được kiến thức căn bản HTML/CSS/SASS và sẽ tiếp tục học các khóa
                                 khác để vươn tới mục tiêu
                                 có thể thực tập và đi làm trong tương lai!
                             </p>
@@ -255,7 +254,7 @@
                                             dụng Website và
                                             được hỗ trợ hầu như trên tất cả các trình duyệt trên cả máy tính lẫn điện
                                             thoại.
-                                           
+
                                         </p>
                                     </div>
                                 </div>
@@ -266,7 +265,39 @@
                     <div class="tab-pane fade" id="muctien" role="tabpanel" aria-labelledby="contact-tab">
                         <div class="about__exp about__text">
                             <h3 class="about__title">Mục Tiêu</h3>
-                            <h2>Sở Thích</h2>
+                            <ul class="d-flex justify-content-around">
+                                <li>
+                                  <h3 >Ngắn hạn</h3>
+                                  <div class="timeline">
+                                    <h3>Nắm chắc kiến thức nền tảng HTML/CSS/SASS/JS</h3>
+                                   
+                                </div>
+                                <div class="timeline">
+                                    <h3>Viết một trang web giới thiệu bản thân</h3>
+                                   
+                                </div>
+                                <div class="timeline">
+                                    <h3>Đi thực tập</h3>
+                                   
+                                </div>
+                                <div class="timeline">
+                                    <h3>Trở thành Fontend Developer chuyên nghiệp</h3>
+                                    
+                                </div>
+                                </li>
+                                <li>
+                                   <h3>Dài hạn</h3> 
+                                
+                                <div class="timeline">
+                                    <h3 >Phát triển lên Backend Developer </h3>
+                                    
+                                </div>
+                                <div class="timeline">
+                                    <h3>Trở thành Fullstack Developer</h3>
+                                    
+                                </div>
+                                </li>
+                            </ul>
 
                         </div>
                     </div>
@@ -372,18 +403,17 @@
 
     <!-- Skill -->
 
-    <section class="skill section">
-       
+    <section id="skills" class="skill section">
+
         <div class="container--width">
             <div class="title">
-                <h1 data-aos="fade-down" data-aos-easing="linear"
-                data-aos-duration="900">Skills</h1>
+                <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">Skills</h1>
             </div>
             <div class="skill__content">
 
                 <div class="row">
-                    <div data-aos="fade-right" data-aos-easing="linear"
-                    data-aos-duration="1500" class="col-12 col-lg-6">
+                    <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"
+                        class="col-12 col-lg-6">
                         <div class="skill__left  row">
                             <div class="skill__item col-4">
                                 <i class="fab fa-java"></i>
@@ -412,51 +442,83 @@
 
                         </div>
                     </div>
-                    <div  class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6">
                         <div class="skill__right ">
 
-                            <div class="ab-progress progress-inline skill__progress" data-progress="" data-value="65"
-                                data-title="HTML5"></div>
-                            <div class="ab-progress progress-inline skill__progress" data-progress="" data-value="65"
-                                data-title="CSS3"></div>
-                            <div class="ab-progress progress-inline skill__progress" data-progress="" data-value="55"
-                                data-title="SASS"></div>
-                            <div class="ab-progress progress-inline skill__progress" data-progress="" data-value="30"
-                                data-title="Javascript"></div>
+                            <div class="progress--skill">
+                                <h3>HTML</h3>
+                                <div class="progress-bar ">
+
+                                    <div class="progress" data-percent="60" data-color="green">
+                                        <span>60%</span>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress--skill">
+                                <h3>CSS</h3>
+                                <div class="progress-bar ">
+
+                                    <div class="progress" data-percent="60" data-color="green">
+                                        <span>60%</span>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress--skill">
+                                <h3>SASS</h3>
+                                <div class="progress-bar ">
+
+                                    <div class="progress" data-percent="55" data-color="green">
+                                        <span>55%</span>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress--skill">
+                                <h3>JavaScript</h3>
+                                <div class="progress-bar ">
+
+                                    <div class="progress" data-percent="30" data-color="green">
+                                        <span>30%</span>
+
+
+                                    </div>
+                                </div>
+                            </div>
 
 
 
                         </div>
-
-
                     </div>
+
                 </div>
 
             </div>
-
-        </div>
         </div>
 
     </section>
 
-
-    <section class="protfolio section">
+    <!-- protfolio -->
+    <section id="protfolio" class="protfolio section">
         <div class="container--width">
             <div class="title">
-                <h1 data-aos="fade-down" data-aos-easing="linear"
-                data-aos-duration="900">protfolio</h1>
+                <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">protfolio</h1>
             </div>
-            <div data-aos="fade-right" data-aos-easing="linear"
-            data-aos-duration="1000" class="protfolio__content section">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000"
+                class="protfolio__content section">
                 <div class="row">
-                    <div  class="col-12 col-md-7 col-lg-6">
+                    <div class="col-12 col-md-7 col-lg-6">
                         <div class="protofolio__img">
 
 
                             <img src="./img/movie.png" alt="movie" class="img-fluid">
                         </div>
                     </div>
-                    <div  class="col-12 col-md-5 col-lg-6">
+                    <div class="col-12 col-md-5 col-lg-6">
                         <div class="portfolio__info">
                             <a href="#" class="portfolio__title">Movie Star</a>
                             <p>An E-commerce website to sell luxury watches. This project was built using React, Context
@@ -469,9 +531,9 @@
 
                             </ul>
                             <div class="button--protfolio">
-                                <a class="btn button" href="https://duongsdbg1102.github.io/Movie/"
+                                <a class="btn button" href="https://duongsdbg1102.github.io/MovieStar/"
                                     target="_blank">Live</a>
-                                <a class="btn button" href="https://github.com/duongsdbg1102/Movie"
+                                <a class="btn button" href="https://github.com/duongsdbg1102/MovieStar"
                                     target="_blank">Source
                                     Code</a>
                             </div>
@@ -480,8 +542,8 @@
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-easing="linear"
-            data-aos-duration="1000"  class="protfolio__content section">
+            <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000"
+                class="protfolio__content section">
                 <div class="row protfolio--even">
 
                     <divv class="col-12 col-md-5 ">
@@ -516,8 +578,8 @@
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-easing="linear"
-            data-aos-duration="1000" class="protfolio__content section">
+            <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000"
+                class="protfolio__content section">
                 <div class="row">
                     <div class="col-12 col-md-8">
                         <div class="protofolio__img">
@@ -553,16 +615,15 @@
         </div>
     </section>
 
-    <section class="contact section">
+    <section id="contact" class="contact section">
         <div class="container--width">
             <div class="title">
-                <h1  data-aos="fade-down" data-aos-easing="linear"
-                data-aos-duration="900">Contact Me</h1>
+                <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">Contact Me</h1>
             </div>
             <div class="contact__content">
                 <div class="row">
-                    <div data-aos="fade-right" data-aos-easing="linear"
-                    data-aos-duration="1000"  class="col-12 col-md-6">
+                    <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000"
+                        class="col-12 col-md-6">
                         <h3>Thông Tin</h3>
                         <ul>
                             <li><i class="fa fa-podcast"></i> <span> Address: Hà Đông, Hà Nội, Việt Nam</span> </li>
@@ -570,11 +631,12 @@
                                         href="tel:+84328041011">+84 328 041 011</a></span></li>
                             <li><i class="fa fa-mail-bulk"></i><span>Email: <a
                                         href="mailto:duongsdbg1102@gmail.com">duongsdbg1102@gmail.com</a> </span></li>
-                            <li><i class="fa fa-store-alt"></i> <span>Website: <a href="https://duongsdbg1102.github.io/Infomation/">duongsdbg1102.github.io/Infomation/</a></span> </li>
+                            <li><i class="fa fa-store-alt"></i> <span>Website: <a
+                                        href="https://duongsdbg1102.github.io/Infomation/">duongsdbg1102.github.io/Infomation/</a></span>
+                            </li>
                         </ul>
                     </div>
-                    <div data-aos="fade-left" data-aos-easing="linear"
-                    data-aos-duration="1000"  class="col-12 col-md-6">
+                    <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" class="col-12 col-md-6">
                         <div class="contact__info">
                             <h3>Liên hệ</h3>
                             <form method="post" name="contact">
@@ -620,12 +682,13 @@
 
 
                 <div class="footer__icon">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/duongsd1999/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
                 </div>
                 <div class="footer__icon">
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/duongsdbg1102"  target="_blank"><i class="fab fa-github"></i></a>
                 </div>
-                <div class="footer__icon"> <a href="https://duongsdbg1102.github.io/Infomation/"><i class="fa fa-store-alt"></i></a></div>
+                <div class="footer__icon"> <a href="https://duongsdbg1102.github.io/Infomation/"  target="_blank"><i
+                            class="fa fa-store-alt"></i></a></div>
 
 
 
@@ -654,22 +717,18 @@
     <!-- WayPOINT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js"></script>
     <!-- PROGRESS -->
-    <script src="./js/progressBar.min.js"></script>
-
+    <script src="./js/progress-bar.js"></script>
     <script>
-        $(".skill__progress").progressBar({
-            duration: 500,
-            height: 20,
-            autoplay: true,
-
-
+        $(document).ready(function () {
+            $(".progress-bar").ProgressBar();
         });
     </script>
+
     <!-- FADE AOS -->
     <script src="./js/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
     <!-- MAIN-JS -->
     <script src="./js/main.js"></script>
 </body>

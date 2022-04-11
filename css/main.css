@@ -266,110 +266,117 @@ header {
       display: none; }
     .silder .silider__right img {
       align-items: center; } }
-.about .about__title::after {
-  content: "";
-  display: block;
-  width: 14%;
-  height: 0.25rem;
-  background: linear-gradient(135deg, #e9b949, #f9da8b);
-  margin: 0; }
-.about h2 {
-  color: #102a42;
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
-  text-transform: capitalize;
-  line-height: 1;
-  margin-bottom: 12px; }
-.about p {
-  color: #617d98;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 18px; }
-.about .about__content {
-  padding: 0 15px; }
-  .about .about__content .nav-tabs {
-    border-bottom: none; }
-    .about .about__content .nav-tabs .nav-item {
-      position: relative;
-      margin-left: 35px;
-      text-align: center; }
-      .about .about__content .nav-tabs .nav-item:first-child {
-        margin-left: 0; }
-      .about .about__content .nav-tabs .nav-item .nav-link {
-        width: 100%;
+.about {
+  background-image: url(../img/pattern-2.png);
+  background-repeat: repeat; }
+  .about .about__title::after {
+    content: "";
+    display: block;
+    width: 14%;
+    height: 0.25rem;
+    background: linear-gradient(135deg, #e9b949, #f9da8b);
+    margin: 0; }
+  .about h2 {
+    color: #102a42;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 12px; }
+  .about p {
+    color: #617d98;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 18px; }
+  .about .about__content {
+    padding: 0 15px; }
+    .about .about__content .nav-tabs {
+      border-bottom: none; }
+      .about .about__content .nav-tabs .nav-item {
         position: relative;
-        overflow: hidden;
-        color: black;
-        font-size: 30px;
-        font-weight: 500;
-        padding: 35px 70px;
-        background-color: #fffaeb;
-        border: none;
-        border-radius: 0;
-        transition: box-shadow 0.4s linear;
-        margin-bottom: 0;
-        box-shadow: #32325d40 0px 2px 5px -1px, #0000004d 0px 1px 3px -1px; }
-        .about .about__content .nav-tabs .nav-item .nav-link::before {
-          content: "";
-          position: absolute;
-          display: block;
-          width: 200%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          background: linear-gradient(100deg, rgba(1, 1, 1, 0) 30%, white);
-          transform: skewX(-24deg) translateX(-118%);
-          transition: all 0.9s;
-          opacity: 1; }
-        .about .about__content .nav-tabs .nav-item .nav-link:hover {
-          box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 17px -30px, #0a254059 0px -2px 6px 0px;
-          background: linear-gradient(135deg, #f7d06e, #f8e3a5, #fceec5); }
-          .about .about__content .nav-tabs .nav-item .nav-link:hover::before {
-            transform: skewX(-24deg) translateX(95%); }
-        .about .about__content .nav-tabs .nav-item .nav-link.active {
-          box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 17px -30px, #0a254059 0px -2px 6px 0px;
-          background: linear-gradient(135deg, #f7d06e, #f8e3a5, #fceec5); }
-  .about .about__content .tab-content {
-    padding: 30px 0; }
-    .about .about__content .tab-content .about__text.about__edu .about__title::after {
-      width: 35%; }
-    .about .about__content .tab-content .about__text h3 {
-      margin-bottom: 18px;
-      font-size: 30px; }
-    .about .about__content .tab-content .about__text .timeline h3 {
-      color: #102a42;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 0; }
-    .about .about__content .tab-content .about__text .timeline p {
-      font-size: 15px;
-      margin-bottom: 8px; }
-      .about .about__content .tab-content .about__text .timeline p:last-child {
+        margin-left: 35px;
+        text-align: center; }
+        .about .about__content .nav-tabs .nav-item:first-child {
+          margin-left: 0; }
+        .about .about__content .nav-tabs .nav-item .nav-link {
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          color: black;
+          font-size: 30px;
+          font-weight: 500;
+          padding: 35px 70px;
+          background-color: #fffaeb;
+          border: none;
+          border-radius: 0;
+          transition: box-shadow 0.4s linear;
+          margin-bottom: 0;
+          box-shadow: #32325d40 0px 2px 5px -1px, #0000004d 0px 1px 3px -1px; }
+          .about .about__content .nav-tabs .nav-item .nav-link::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 200%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(100deg, rgba(1, 1, 1, 0) 30%, white);
+            transform: skewX(-24deg) translateX(-118%);
+            transition: all 0.9s;
+            opacity: 1; }
+          .about .about__content .nav-tabs .nav-item .nav-link:hover {
+            box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 17px -30px, #0a254059 0px -2px 6px 0px;
+            background: linear-gradient(135deg, #f7d06e, #f8e3a5, #fceec5); }
+            .about .about__content .nav-tabs .nav-item .nav-link:hover::before {
+              transform: skewX(-24deg) translateX(95%); }
+          .about .about__content .nav-tabs .nav-item .nav-link.active {
+            box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 17px -30px, #0a254059 0px -2px 6px 0px;
+            background: linear-gradient(135deg, #f7d06e, #f8e3a5, #fceec5); }
+    .about .about__content .tab-content {
+      padding: 30px 0; }
+      .about .about__content .tab-content .about__text.about__edu .about__title::after {
+        width: 35%; }
+      .about .about__content .tab-content .about__text h3 {
+        margin-bottom: 18px;
+        font-size: 30px; }
+      .about .about__content .tab-content .about__text .timeline h3 {
         color: #102a42;
-        font-size: 16px;
-        font-weight: 500; }
-    .about .about__content .tab-content .about__text .about__game {
-      display: block;
-      padding: 20px;
-      border-radius: 12px;
-      text-decoration: none;
-      box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px;
-      background: #fceec5;
-      transition: all 0.4s;
-      margin-bottom: 24px; }
-      .about .about__content .tab-content .about__text .about__game img {
-        border-radius: 10px;
-        width: 100%;
-        height: 150px;
-        object-fit: cover; }
-      .about .about__content .tab-content .about__text .about__game h2 {
-        letter-spacing: 2px;
-        margin-bottom: 20px; }
-      .about .about__content .tab-content .about__text .about__game:hover {
-        box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
-        transform: scale(1.03); }
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0; }
+      .about .about__content .tab-content .about__text .timeline p {
+        font-size: 15px;
+        margin-bottom: 8px; }
+        .about .about__content .tab-content .about__text .timeline p:last-child {
+          color: #102a42;
+          font-size: 16px;
+          font-weight: 500; }
+      .about .about__content .tab-content .about__text .about__game {
+        display: block;
+        padding: 20px;
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px;
+        background: #fceec5;
+        transition: all 0.4s;
+        margin-bottom: 24px; }
+        .about .about__content .tab-content .about__text .about__game img {
+          border-radius: 10px;
+          width: 100%;
+          height: 150px;
+          object-fit: cover; }
+        .about .about__content .tab-content .about__text .about__game h2 {
+          letter-spacing: 2px;
+          margin-bottom: 20px; }
+        .about .about__content .tab-content .about__text .about__game:hover {
+          box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+          transform: scale(1.03); }
+      .about .about__content .tab-content .about__text.about__exp ul li {
+        list-style: none; }
+        .about .about__content .tab-content .about__text.about__exp ul li .timeline h3 {
+          font-size: 16px; }
 
 @media screen and (min-width: 900px) and (max-width: 1120px) {
   .about .about__content .nav-tabs .nav-item .nav-link {
@@ -399,17 +406,32 @@ header {
       margin-bottom: 8px; }
     .skill .skill__content .skill__left .skill__item h3 {
       font-size: 20px; }
-  .skill .skill__content .skill__right .skill__progress {
-    height: 35px; }
-    .skill .skill__content .skill__right .skill__progress.ab-progress-bar {
-      width: 35px; }
+  .skill .skill__content .skill__right .progress--skill h3 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+    left: 22px;
+    padding: 5px; }
+  .skill .skill__content .skill__right .progress--skill .progress-bar {
+    width: 100%;
+    margin: 20px 0;
+    margin-top: 0; }
+    .skill .skill__content .skill__right .progress--skill .progress-bar .progress {
+      background: linear-gradient(to left, #148cfa, #64f5d2); }
+    .skill .skill__content .skill__right .progress--skill .progress-bar span {
+      top: 12px; }
 
 @media screen and (max-width: 992px) {
-  .skill__left {
+  .skill .skill__content .skill__left {
     margin-bottom: 35px; }
-
-  .skill__right {
-    margin: 0 65px; } }
+  .skill .skill__content .skill__right {
+    margin: 0 65px; }
+    .skill .skill__content .skill__right .progress--skill h3 {
+      z-index: 1;
+      left: 82px;
+      padding: 5px; } }
 .protfolio .protfolio__content {
   border-bottom: 1.5px dashed #102a42; }
   .protfolio .protfolio__content .protofolio__img {
@@ -642,27 +664,32 @@ footer {
   .darkMode .silder .silder__left p {
     color: #f9efc5; }
 
-.darkMode .about .about__title {
-  color: #fff; }
-.darkMode .about p {
-  color: #f9efc5; }
-.darkMode .about .about__content .nav-tabs .nav-item .nav-link p {
-  color: #617d98; }
-.darkMode .about .about__content .tab-content .about__text .timeline h3 {
-  color: #fff; }
-.darkMode .about .about__content .tab-content .about__text .timeline p {
-  color: #c9c3aa; }
-  .darkMode .about .about__content .tab-content .about__text .timeline p:last-child {
+.darkMode .about {
+  background: none; }
+  .darkMode .about .about__title {
+    color: #fff; }
+  .darkMode .about p {
     color: #f9efc5; }
-.darkMode .about .about__content .tab-content .about__text .about__game {
-  background: white; }
-  .darkMode .about .about__content .tab-content .about__text .about__game h2 {
-    color: #051418; }
-  .darkMode .about .about__content .tab-content .about__text .about__game p {
-    color: #051418; }
+  .darkMode .about .about__content .nav-tabs .nav-item .nav-link p {
+    color: #617d98; }
+  .darkMode .about .about__content .tab-content .about__text .timeline h3 {
+    color: #fff; }
+  .darkMode .about .about__content .tab-content .about__text .timeline p {
+    color: #c9c3aa; }
+    .darkMode .about .about__content .tab-content .about__text .timeline p:last-child {
+      color: #f9efc5; }
+  .darkMode .about .about__content .tab-content .about__text .about__game {
+    background: white; }
+    .darkMode .about .about__content .tab-content .about__text .about__game h2 {
+      color: #051418; }
+    .darkMode .about .about__content .tab-content .about__text .about__game p {
+      color: #051418; }
 
 .darkMode .skill {
   background-color: #051418; }
+  .darkMode .skill .skill__right .progress--skill .progress-bar {
+    border: 1px solid #fff;
+    background-color: #051418; }
 
 .darkMode .protfolio .protfolio__content {
   border-bottom-color: #fff; }

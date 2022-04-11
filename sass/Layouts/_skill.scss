@@ -1,42 +1,64 @@
-.skill{
+.skill {
     position: relative;
-    background-color:#f1f5f8 ;
-    
-    
-  
-   
-    .skill__content{
-       
+    background-color: #f1f5f8;
 
-        .skill__left{
-            .skill__item{
+    .skill__content {
+        .skill__left {
+            .skill__item {
                 text-align: center;
                 margin-bottom: $mg-20;
-                i{
+                i {
                     font-size: $fs-40;
                     margin-bottom: $mg-8;
                 }
-                h3{
+                h3 {
                     font-size: $fs-20;
                 }
             }
         }
-        .skill__right{
-            .skill__progress{
-                height: 35px;
-                &.ab-progress-bar{
-                    width: 35px;
+        .skill__right {
+            .progress--skill {
+                h3 {
+                    @include styleText($white, $fs-11 + 1, $fw-500);
+
+                    position: absolute;
+                    z-index: 1;
+                    left: 22px;
+                    padding: 5px;
+                }
+                .progress-bar {
+                    width: 100%;
+                    margin: 20px 0;
+                    margin-top: 0;
+
+                    .progress {
+                        background: linear-gradient(to left, #148cfa, #64f5d2);
+                    }
+                    span {
+                        top: 12px;
+                    }
                 }
             }
         }
     }
 }
 //REPONSIVE
-@include responsive('large'){
-    .skill__left{
-        margin-bottom: $mg-35;
-    }
-    .skill__right{
-        margin: 0 $mg-60 + 5;
+@include responsive("large") {
+    .skill {
+        .skill__content {
+            .skill__left {
+                margin-bottom: $mg-35;
+            }
+            .skill__right {
+                margin: 0 $mg-60 + 5;
+                .progress--skill {
+                    h3 {
+                        z-index: 1;
+                        left: 82px;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
     }
 }

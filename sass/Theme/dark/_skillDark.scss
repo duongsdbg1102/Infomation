@@ -1,6 +1,15 @@
 .darkMode{
     .skill{
         background-color: $color-Dark1;
-        
+        .skill__right{
+            .progress--skill{
+                .progress-bar{
+                    border: 1px solid $white ;
+               background-color: #051418;
+             
+                  
+                }
+            }
+         }
     }
 }

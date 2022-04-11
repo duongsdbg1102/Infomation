@@ -1,4 +1,6 @@
 .about {
+    background-image: url(../img/pattern-2.png);
+    background-repeat: repeat;
     .about__title {
         &::after {
             content: "";
@@ -127,57 +129,67 @@
                         transform: scale(1.03);
                     }
                 }
+                &.about__exp {
+                    ul {
+                        li {
+                            .timeline {
+                               h3{
+                                font-size: $fs-16;
+                            }}
+                            list-style: none;
+                        }
+                    }
+                }
             }
         }
     }
 }
 //REPONSIVE
 //1120px
-@media screen and (min-width:900px) and (max-width: 1120px) {
+@media screen and (min-width: 900px) and (max-width: 1120px) {
     .about {
         .about__content {
             .nav-tabs {
-                .nav-item{
-                   .nav-link{
-                    padding: 26px 45px;
-                   }
+                .nav-item {
+                    .nav-link {
+                        padding: 26px 45px;
                     }
                 }
             }
         }
     }
+}
 
 // 1100px
 @media screen and (max-width: 900px) {
     .about {
         .about__content {
             .nav-tabs {
-                .nav-item{
+                .nav-item {
                     flex-basis: 33%;
                     margin-bottom: $mg-35;
-                    &:nth-child(odd){
+                    &:nth-child(odd) {
                         margin-left: 0;
                     }
-                    .nav-link{
+                    .nav-link {
                         padding: 35px 66px;
-                       }
+                    }
                 }
             }
         }
     }
 }
 //768px
-@include responsive('medium'){
+@include responsive("medium") {
     .about {
         .about__content {
             .nav-tabs {
                 flex-direction: column;
-                .nav-item{
+                .nav-item {
                     margin-bottom: $mg-35;
-                   margin-left: 0;
+                    margin-left: 0;
                 }
             }
         }
     }
 }
-
